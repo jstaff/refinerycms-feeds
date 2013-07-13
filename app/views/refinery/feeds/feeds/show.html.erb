@@ -1,0 +1,39 @@
+<% content_for :body_content_title do %>
+  <%= @feed.title %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Title</h1>
+    <p>
+      <%=raw @feed.title %>
+    </p>
+  </section>
+  <section>
+    <h1>Link Url</h1>
+    <p>
+      <%=raw @feed.link_url %>
+    </p>
+  </section>
+  <section>
+    <h1>Position</h1>
+    <p>
+      <%=raw @feed.position %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="feeds">
+      <% @feeds.each do |feed| %>
+        <li>
+          <%= link_to feed.title, refinery.feeds_feed_path(feed) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

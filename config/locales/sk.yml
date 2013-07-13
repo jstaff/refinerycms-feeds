@@ -1,0 +1,29 @@
+sk:
+  refinery:
+    plugins:
+      feeds:
+        title: Feeds
+    feeds:
+      admin:
+        feeds:
+          actions:
+            create_new: Pridať Feed
+            reorder: Preusporiadať Feeds
+            reorder_done: Koniec radenia Feeds
+          records:
+            title: Feeds
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Feeds. Kliknite na "Pridať Feed" pre pridanie prvého feed.
+          feed:
+            view_live_html: Zobraziť náhľad feed<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť feed
+            delete: Zmazať feed
+      feeds:
+        show:
+          other: Daľšie Feeds
+  activerecord:
+    attributes:
+      'refinery/feeds/feed':
+        title: Title
+        link_url: Link Url
+        position: Position

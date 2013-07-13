@@ -1,0 +1,30 @@
+es:
+  refinery:
+    plugins:
+      feeds:
+        title: Feeds
+#        article: masculino/femenino
+    feeds:
+      admin:
+        feeds:
+          actions:
+            create_new: Crear nuevo feed
+            reorder: Reordenar feeds
+            reorder_done: Reordenación de feeds completada
+          records:
+            title: Feeds
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay feeds todavía. Pulsa en "Crear nuevo Feed" para crear tu primer feed.
+          feed:
+            view_live_html: Ver este feed como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este feed
+            delete: Borrar este feed para siempre
+      feeds:
+        show:
+          other: Otros feeds
+  activerecord:
+    attributes:
+      'refinery/feeds/feed':
+        title: Title
+        link_url: Link Url
+        position: Position

@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="feeds">
+    <% @feeds.each do |feed| %>
+      <li>
+        <%= link_to feed.title, refinery.feeds_feed_path(feed) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

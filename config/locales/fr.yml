@@ -1,0 +1,29 @@
+fr:
+  refinery:
+    plugins:
+      feeds:
+        title: Feeds
+    feeds:
+      admin:
+        feeds:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Feed
+            reorder: Réordonner les Feeds
+            reorder_done: Fin de réordonnancement des Feeds
+          records:
+            title: Feeds
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Feed. Cliquer sur "Créer un(e) nouve(au/l/lle) Feed" pour créer votre premi(er/ère) feed.'
+          feed:
+            view_live_html: Voir ce(t/tte) feed <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) feed
+            delete: Supprimer définitivement ce(t/tte) feed
+      feeds:
+        show:
+          other: Autres Feeds
+  activerecord:
+    attributes:
+      'refinery/feeds/feed':
+        title: Title
+        link_url: Link Url
+        position: Position
